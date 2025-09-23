@@ -1,0 +1,79 @@
+body {
+    background-color: #DDDDDD; /* Light gray fallback */
+    font-family: 'Arimo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.login {
+    /* Use a more compatible semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px; /* Set a max-width for the form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Add shadow to make text more readable */
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%; /* Make input fields take full width of the container */
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #4CAF50;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Make the button a block element */
+    width: 100%; /* Make it full width */
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* --- Styles for the Prediction Result Box --- */
+.prediction-text {
+    background-color: white;  /* White box */
+    color: black;             /* Black text inside the box */
+    text-align: center;       /* Center the text content */
+    padding: 20px;            /* Add some internal spacing */
+    margin: 30px auto 0 auto; /* Center the box and add space on top */
+    border-radius: 8px;       /* Give it rounded corners */
+    width: 90%;               /* Set a width relative to its container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add a subtle shadow for depth */
+    font-size: 1.2em;         /* Make the prediction font a bit larger */
+    font-weight: bold;
+}
+
