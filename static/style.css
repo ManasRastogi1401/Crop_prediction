@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     background-color: #DDDDDD; /* Light gray fallback */
     font-family: 'Arimo', sans-serif;
@@ -77,8 +76,6 @@ button:hover {
     font-size: 1.2em;         /* Make the prediction font a bit larger */
     font-weight: bold;
 }
-
-=======
 body {
     background-color: #DDDDDD; /* Light gray fallback */
     font-family: 'Arimo', sans-serif;
@@ -157,5 +154,3 @@ button:hover {
     font-size: 1.2em;         /* Make the prediction font a bit larger */
     font-weight: bold;
 }
-
->>>>>>> 2412f8fdbbeb80352994ecb1c9f6016f3ba4fc3d
