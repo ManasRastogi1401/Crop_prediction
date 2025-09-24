@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,47 +38,3 @@
     </div>
 </body>
 </html>
-
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Crop Prediction API</title>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-    <!-- This new style block correctly sets the background image using Flask -->
-    <style>
-        body {
-            background-image: url("{{ url_for('static', filename='scene.jpg') }}");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Keeps the background in place on scroll */
-        }
-    </style>
-</head>
-<body>
-    <div class="login">
-        <h1>Crop Prediction Model</h1>
-        <form action="{{ url_for('predict') }}" method="post">
-            <input type="text" name="Nitrogen" placeholder="Nitrogen" required="required"/>
-            <input type="text" name="Phosphorus" placeholder="Phosphorus" required="required"/>
-            <input type="text" name="Potassium" placeholder="Potassium" required="required"/>
-            <input type="text" name="temperature" placeholder="Temperature" required="required"/>
-            <input type="text" name="humidity" placeholder="Humidity" required="required"/>
-            <input type="text" name="ph" placeholder="pH Value" required="required"/>
-            <input type="text" name="rainfall" placeholder="Rainfall (in mm)" required="required"/>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-        </form>
-        <br>
-        <h2 class="prediction-text">{{ prediction_text }}</h2>
-    </div>
-</body>
-</html>
-
->>>>>>> 2412f8fdbbeb80352994ecb1c9f6016f3ba4fc3d
