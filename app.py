@@ -3,19 +3,24 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 # Create flask app
-flask_app = Flask(__name__)
+# RENAMED this variable
+app = Flask(__name__)
 model = pickle.load(open("model.pkl", "rb"))
 
-@flask_app.route("/")
+# RENAMED this decorator
+@app.route("/")
 def Home():
     return render_template("index.html")
 
-@flask_app.route("/predict", methods = ["POST"])
+# RENAMED this decorator
+@app.route("/predict", methods = ["POST"])
 def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
     prediction = model.predict(features)
-    return render_template("index.html", prediction_text = "The Predicted Crop is {}".format(prediction))
+    # The output of model.predict is an array, so get the first item
+    return render_template("index.html", prediction_text = "The Predicted Crop is {}".format(prediction[0]))
 
 if __name__ == "__main__":
-    flask_app.run(debug=True)
+    # RENAMED this variable
+    app.run(debug=True)
