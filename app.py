@@ -3,16 +3,13 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 # Create flask app
-# RENAMED this variable
 app = Flask(__name__)
 model = pickle.load(open("model.pkl", "rb"))
 
-# RENAMED this decorator
 @app.route("/")
 def Home():
     return render_template("index.html")
 
-# RENAMED this decorator
 @app.route("/predict", methods = ["POST"])
 def predict():
     float_features = [float(x) for x in request.form.values()]
