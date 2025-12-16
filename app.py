@@ -19,5 +19,4 @@ def predict():
     return render_template("index.html", prediction_text = "The Predicted Crop is {}".format(prediction[0]))
 
 if __name__ == "__main__":
-    # RENAMED this variable
     app.run(debug=True)
