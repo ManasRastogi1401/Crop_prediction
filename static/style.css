@@ -1,5 +1,5 @@
 body {
-    background-color: #DDDDDD; /* Light gray fallback */
+    background-color: #DDDDDD;
     font-family: 'Arimo', sans-serif;
     display: flex;
     justify-content: center;
@@ -10,12 +10,11 @@ body {
 }
 
 .login {
-    /* Use a more compatible semi-transparent white background */
     background-color: rgba(255, 255, 255, 0.85);
     padding: 40px;
     border-radius: 10px;
     width: 100%;
-    max-width: 500px; /* Set a max-width for the form container */
+    max-width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
@@ -23,12 +22,12 @@ body {
 h1 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 4px #000000; /* Add shadow to make text more readable */
+    text-shadow: 2px 2px 4px #000000;
     margin-bottom: 30px;
 }
 
 input {
-    width: 100%; /* Make input fields take full width of the container */
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -71,8 +70,8 @@ button:hover {
     padding: 20px;            /* Add some internal spacing */
     margin: 30px auto 0 auto; /* Center the box and add space on top */
     border-radius: 8px;       /* Give it rounded corners */
-    width: 90%;               /* Set a width relative to its container */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add a subtle shadow for depth */
-    font-size: 1.2em;         /* Make the prediction font a bit larger */
+    width: 90%;               
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    font-size: 1.2em;         
     font-weight: bold;
 }
